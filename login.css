@@ -1,0 +1,135 @@
+/* Toàn bộ nền */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    background: url('https://s3.envato.com/files/199751193/DSC03197.JPG') ; /* Thay ảnh phù hợp */
+}
+
+/* Lớp phủ mờ */
+.background {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Hiệu ứng tối mờ */
+}
+
+/* Hộp đăng nhập */
+.login-box {
+    width: 400px;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: #fff;
+}
+
+/* Tiêu đề */
+.login-box h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Các ô nhập liệu */
+/* Các ô nhập liệu với icon */
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+    display: flex; /* Sử dụng flex để căn chỉnh các thành phần */
+    align-items: flex-end; /* Đẩy các thành phần xuống cuối */
+    background: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Nút đăng nhập */
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background: #e63946;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login-btn:hover {
+    background: #d62839;
+}
+
+/* Đăng kí tài khoản */
+.Register {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #aaa;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.Register:hover {
+    color: #fff;
+}
+
+/* Văn bản "or login with" */
+p {
+    margin: 20px 0;
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* Nút mạng xã hội */
+.social-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-buttons button {
+    flex: 1;
+    margin: 0 5px;
+    padding: 10px;
+    background: #444;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.social-buttons button:hover {
+    background: #555;
+}
+/* Các ô nhập liệu với icon */
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-box i {
+    color: #666;
+    font-size: 16px;
+    margin-right: 10px; /* Khoảng cách giữa icon và input */
+}
+
+.input-box input {
+    width: 100%;
+    border: none;
+    background: transparent;
+    outline: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.input-box input:focus {
+    border: none;
+    background: transparent;
+    color: #000;
+}

@@ -1,0 +1,119 @@
+/* Reset margin và padding cho tất cả các phần tử */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style cho body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container cho sản phẩm */
+.product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    margin-top: 50px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 1000px; /* Đảm bảo chiều rộng tối đa */
+    min-height: 500px; /* Cung cấp chiều cao tối thiểu cho container */
+    flex-wrap: wrap; /* Cho phép các phần tử trong container có thể wrap xuống khi kích thước nhỏ */
+}
+
+/* Phần hình ảnh sản phẩm */
+.product-image {
+    max-width: 600px;
+    margin-right: 50px;
+    flex: 1; /* Đảm bảo phần hình ảnh chiếm không gian còn lại khi cần */
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Thông tin sản phẩm */
+.product-info {
+    max-width: 400px;
+    padding: 20px;
+    flex: 1;
+    min-width: 300px; /* Đảm bảo phần thông tin không quá nhỏ */
+}
+
+.product-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-info p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.product-info .price {
+    color: red;
+    font-size: 22px;
+    margin: 15px 0;
+}
+
+/* Nút "Add to Cart" */
+.product-info .add-to-cart-btn {
+    background-color: #ff9900; /* Màu nền cam */
+    border: none;
+    padding: 15px 30px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.product-info .add-to-cart-btn:hover {
+    background-color: #e68900; /* Màu nền cam tối khi hover */
+}
+
+/* Mô tả sản phẩm */
+.product-description {
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+.product-description h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+/* Nút "Quay về trang chủ" */
+.product-info .back-to-home-btn {
+    position: fixed; /* Đặt nó ở vị trí cố định */
+    bottom: 20px; /* Cách đáy của cửa sổ trình duyệt 20px */
+    left: 50%; /* Căn giữa theo chiều ngang */
+    transform: translateX(-50%); /* Điều chỉnh để chính xác giữa */
+    background-color: #33e4cc;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.product-info .back-to-home-btn:hover {
+    background-color: #1dccb2; /* Thêm màu hover khác */
+}

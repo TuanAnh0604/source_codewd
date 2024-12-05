@@ -1,0 +1,153 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Chiều cao tối thiểu toàn màn hình */
+}
+
+/* Profile Container */
+.profile-container {
+    display: flex;
+    background: #fff;
+    width: 70%; /* Độ rộng của container */
+    max-width: 1200px; /* Độ rộng tối đa */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1;
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    border-right: 1px solid #ddd;
+}
+
+.sidebar .profile-avatar img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.sidebar h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.sidebar .menu {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.sidebar .menu li {
+    margin: 10px 0;
+}
+
+.sidebar .menu li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar .menu li a:hover,
+.sidebar .menu li.active a {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Profile Content */
+.profile-content {
+    flex: 2;
+    padding: 40px;
+}
+
+.profile-content h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Form Styles */
+.profile-form .form-row {
+    display: flex;
+    flex-direction: column; /* Thay đổi từ hàng ngang thành hàng dọc */
+    gap: 20px; /* Khoảng cách giữa các hàng */
+    margin-bottom: 20px;
+}
+
+.profile-form .form-group {
+    flex: 1;
+}
+
+.profile-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+.profile-form .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.save-button {
+    background-color: #81e1ee;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.save-button:hover {
+    background-color: #81e1ee;
+}
+/* Sidebar */
+.sidebar {
+    flex: 1;
+    background-color: #f8f9fa;
+    padding: 40px 20px; /* Tăng padding trên để dịch xuống */
+    text-align: center;
+    border-right: 1px solid #ddd;
+}
+
+/* Avatar */
+.sidebar .profile-avatar img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Tên người dùng */
+.sidebar h3 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px; /* Tăng khoảng cách giữa avatar và tên */
+    margin-bottom: 20px; /* Khoảng cách bên dưới tên người dùng */
+}

@@ -1,0 +1,399 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+header .logo img {
+    max-width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px; /* Điều chỉnh khoảng cách từ logo */
+}
+  
+.h4 {
+    margin: 0; /* Bỏ margin mặc định của h1 */
+    font-size: 24px; /* Điều chỉnh kích thước chữ */
+}
+
+/* Navigation menu */
+header .menu ul {
+    display: flex;
+    list-style: none;
+}
+
+header .menu ul li {
+    margin: 0 20px;
+}
+
+header .menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+header .menu ul li a:hover {
+    color: #007bff;
+}
+
+/* Header Icons */
+header .header-icons {
+    display: flex;
+    align-items: center;
+}
+
+header .header-icons a {
+    margin-left: 20px;
+    color: #333;
+    font-size: 22px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+header .header-icons a:hover {
+    color: #007bff;
+}
+
+/* Hiển thị thông tin người dùng đã đăng nhập */
+header .user-info {
+    font-size: 16px;
+    color: #007bff;
+    margin-right: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+header .user-info i {
+    margin-right: 8px;
+}
+
+/* Thông báo thành công */
+.alert {
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Profile Modal */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.profile-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+}
+
+.profile-modal h2 {
+    text-align: center;
+}
+
+.profile-modal form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.profile-modal form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.profile-modal form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.profile-modal form button:hover {
+    background-color: #0056b3;
+}
+
+/* Products Section */
+#products {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+#products h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Thêm hiệu ứng cho sản phẩm */
+.products_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Khoảng cách giữa các sản phẩm */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Căn giữa danh sách sản phẩm */
+}
+
+/* Button View More */
+.view-more-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.view-more-btn:hover {
+    background-color: #0056b3;
+}
+/* Bao bọc toàn bộ danh sách sản phẩm */
+.products-container {
+    display: flex;
+    flex-wrap: wrap; /* Cho phép xuống dòng nếu có nhiều sản phẩm */
+    gap: 20px; /* Khoảng cách giữa các sản phẩm */
+    justify-content: space-between; /* Căn đều các sản phẩm */
+    margin: 20px 0; /* Khoảng cách trên dưới cho danh sách */
+}
+
+/* Mỗi sản phẩm */
+.single_product {
+    flex: 1 1 calc(25% - 20px); /* Chia mỗi sản phẩm thành 4 cột (25%) */
+    max-width: calc(25% - 20px); /* Cùng giới hạn kích thước */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Căn đều nội dung */
+}
+
+/* Hình ảnh sản phẩm */
+.single_product img {
+    width: 100%;
+    height: 200px; /* Cố định chiều cao để đảm bảo đồng đều */
+    object-fit: cover; /* Đảm bảo ảnh không bị méo */
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Tiêu đề sản phẩm */
+.single_product h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Nút thêm vào giỏ hàng */
+.single_product .btn {
+    display: inline-block;
+    margin: 5px; /* Khoảng cách giữa các nút */
+    padding: 10px 15px; /* Khoảng cách bên trong nút */
+    text-decoration: none; /* Xóa gạch chân */
+    font-size: 0.9rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.product-description {
+    font-size: 14px;
+    color: #555;
+    margin: 10px 0;
+    min-height: 50px; /* Đảm bảo các mô tả có chiều cao tối thiểu đồng đều */
+}
+
+.price-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.current-price {
+    color: #e74c3c;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.original-price {
+    color: #999;
+    text-decoration: line-through;
+}
+
+.discount-tag {
+    background-color: #e74c3c;
+    color: #fff;
+    font-size: 0.9rem;
+    padding: 5px 8px;
+    border-radius: 12px;
+}
+
+/* Căn chỉnh các nút */
+.btn-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between; /* Tạo khoảng cách đều giữa các nút */
+}
+
+.btn-container .btn {
+    flex: 1; /* Đảm bảo các nút có kích thước bằng nhau */
+    margin: 0 5px; /* Tạo khoảng cách giữa các nút */
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.btn-container .btn-info {
+    background-color: #007bff;
+}
+
+.btn-container .btn-info:hover {
+    background-color: #0056b3;
+}
+
+.btn-container .btn-success {
+    background-color: #28a745;
+}
+
+.btn-container .btn-success:hover {
+    background-color: #218838;
+}
+/* Footer Styles */
+.footer {
+    background-color: #1e1e2f;
+    color: #fff;
+    padding: 40px 0;
+    font-size: 14px;
+    margin-top: 30px; /* Tạo khoảng cách với nội dung phía trên */
+    width: 100%; /* Đảm bảo footer lấp đầy chiều ngang */
+    box-sizing: border-box; /* Bao gồm cả padding trong width */
+}
+
+.footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Căn đều các cột */
+    max-width: 1200px; /* Giới hạn chiều rộng tối đa */
+    margin: 0 auto; /* Căn giữa nội dung bên trong */
+    padding: 0 20px; /* Đảm bảo không bị khoảng trắng hai bên */
+}
+
+.footer h5 {
+    color: #f8f9fa;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: #a9a9a9;
+    transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+    color: #f8f9fa;
+}
+
+.footer p {
+    margin-bottom: 10px;
+    color: #d1d1d1;
+}
+
+.footer .social-icons a {
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+    color: #007bff;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    color: #aaa;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Xóa khoảng trắng ở hai bên */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
